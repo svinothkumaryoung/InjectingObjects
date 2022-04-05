@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    <bean id="sinfo" class="com.cognizant.injectingObjectPgm.StudentName">
+        <property name="vinoth" ref="vin"/>
+        <property name="ashok" ref="ask"/>
+        <property name="roshan" ref="ros" />
+    </bean>
+    <bean id="vin" class="com.cognizant.injectingObjectPgm.StudentDetails">
+        <property name="registerNo" value="6666"/>
+        <property name="name" value="Vinothkumar Selvaarassan"/>
+        <property name="Address" value="Chennai"/>
+    </bean>
+    <bean id="ask" class="com.cognizant.injectingObjectPgm.StudentDetails">
+        <property name="registerNo" value="6667"/>
+        <property name="name" value="Ashokkumar Selvaarasan"/>
+        <property name="Address" value="karur"/>
+    </bean>
+    <bean id="ros" class="com.cognizant.injectingObjectPgm.StudentDetails">
+        <property name="registerNo" value="6668"/>
+        <property name="name" value="Roshan Vinothkumar"/>
+        <property name="Address" value="Chennai"/>
+    </bean>
+
+</beans>
